@@ -33,9 +33,32 @@ body {
   margin: 1rem auto;
   max-width: 850px;
 }
+p::first-letter{
+  color: purple;
+  text-transform: lowercase;
+}
 
-a {
-  color: rgb(8, 73, 194);
+div >p{
+  color: rgb(105, 7, 105);
+}
+
+a[href="https://byui.instructure.com/"] {
+  color: black;
+}
+a:link{
+  text-decoration: none;
+  color: blueviolet;
+}
+a:visited{
+  color: green;
+}
+a:hover{
+  color: aqua;
+  background-color: black;
+}
+a:active{
+  color: bisque;
+  background-color: blueviolet;
 }
 .byui {
   color: rgb(255, 255, 255);
