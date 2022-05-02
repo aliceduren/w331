@@ -1,0 +1,3 @@
+fieldset:nth-of-type(n+2) > p {
+    display: none;
+}
