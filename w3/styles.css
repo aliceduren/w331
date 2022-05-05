@@ -1,21 +1,6 @@
 body {
   background-color: rgb(128, 11, 0);
 }
-@media (max-width: 1280px) {
-  body {
-    background: red;
-  }
-}
-@media (max-width: 700px) {
-  body {
-    background: cyan;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    background: green;
-  }
-}
 body h1 {
   color: rgb(255, 255, 255);
 }
@@ -26,7 +11,22 @@ body h1 {
 }
 #contactform input, #contactform textarea {
   background-color: rgb(246, 236, 213);
-  flex: 2;
+  width: 32em;
+}
+@media (max-width: 700px) {
+  #contactform input, #contactform textarea {
+    width: 95%;
+  }
+}
+#contactform input[type=submit] {
+  width: 60px;
+  height: auto;
+}
+@media (min-width: 700px) {
+  #contactform input[type=submit] {
+    position: absolute;
+    top: 300px;
+  }
 }
 
 form, fieldset {
@@ -39,6 +39,12 @@ form, fieldset {
 div {
   float: right;
   padding: 0.5em;
+}
+@media (max-width: 700px) {
+  div {
+    width: -webkit-fill-available;
+    padding: 0;
+  }
 }
 
 label {

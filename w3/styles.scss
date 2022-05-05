@@ -9,36 +9,46 @@ $break-medium: 700px;
 $break-large: 1280px;
 @mixin breakpoint($break) {
     @if $break == large {
-    @media (max-width: $break-large) { @content;}
+    @media (min-width: $break-large) { @content;}
     }
     @else if $break == medium {
-    @media (max-width: $break-medium) { @content; }
+    @media (min-width: $break-medium) { @content; }
     }
-    @else if $break == small {
-    @media (max-width: $break-small) { @content; }
+    @else if $break == med {
+    @media (max-width: $break-medium) { @content; }
     } @else {
     @media ($break) { @content; }
     }
     }
 body{
     background-color: $body-background-color;
-    @include breakpoint(large) { background: red; }
-    @include breakpoint(medium) { background: cyan; }
-    @include breakpoint(small) { background: green; }
     h1{
         color: $headlines-color;
     }
 }
+
 
 #contactform {
     background-color: $form-background-color;
     box-sizing: border-box;
     input, textarea {
         background-color: $input-color;
-        flex: 2;
-        
+        width: 32em;
+        @include breakpoint(med){
+            width: 95%;
+        }    
     }
+    input[type=submit]{
+        width: 60px;
+        height: auto;
+        @include breakpoint(medium) {
+            position: absolute;
+            top: 300px;
+            }
+    }
+    
 }
+
 @mixin center {
     width: 90%;
     max-width: 960px;
@@ -51,6 +61,10 @@ body{
   div{
       float:right;
       padding: .5em;
+      @include breakpoint(med){
+        width: -webkit-fill-available;
+        padding: 0;
+      }
   }
   label{
       float: left;
