@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Lora:wght@600&display=swap");
+a:link, a:visited {
+  text-decoration: none;
+  color: #666;
+}
+
+a:active {
+  color: #DEB887;
+}
+
+a:hover {
+  color: #00ddff;
+}
+
+h1 a:link, h1 a:visited {
+  color: black;
+}
+
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav {
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+@media (min-width: 700px) {
+  nav {
+    padding-right: 45px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  line-height: 2em;
+  font-family: "Lora", serif;
+  margin: -5px;
+  padding: 10px;
+  color: #d0d0d0;
+}
+@media (min-width: 700px) {
+  ul {
+    text-align: right;
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 700px) {
+  li {
+    display: inline;
+  }
+  li a {
+    padding: 10px;
+  }
+}
+
+main {
+  padding-top: 2em;
+}
+
+@media (min-width: 700px) {
+  section {
+    padding-bottom: 20px;
+    grid-column-start: 2;
+    border-bottom: 1px solid #d0d0d0;
+    width: 100%;
+    grid-column-end: 2;
+  }
+}
+
+.post-date {
+  font-family: "Lora", serif;
+  text-transform: uppercase;
+  text-align: right;
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 1.7em;
+}
+@media (min-width: 700px) {
+  .post-date {
+    padding-right: 10px;
+    border-right: 1px solid #d0d0d0;
+    border-bottom: none;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 0;
+}
+
+article {
+  background-color: white;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+@media (min-width: 700px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+h1 {
+  font-size: 5em;
+}
+
+h1, h2 {
+  font-family: "Libre Franklin", sans-serif;
+  font-family: "Lora", serif;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+figure {
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+figure img {
+  margin: auto;
+}
+@media (min-width: 700px) {
+  figure img {
+    width: 30%;
+  }
+}
+
+/*# sourceMappingURL=nain.css.map */
