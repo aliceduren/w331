@@ -1,26 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300&family=Roboto+Mono:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Franklin:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+h1, h4{
+  font-family: 'Dancing Script', cursive;
+}
 h1 {
-  background-color: rgb(22, 51, 131);
   border-radius: 0.2em;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 4em;
-  margin-top: 0;
-  padding: 0.3em;
-  padding-right: 3em;
 }
 h2 {
   border-bottom: 1px solid rgb(0, 0, 0);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Caveat', cursive;
+}
+h4{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+header{
+  
+  background: rgb(255,188,95);
+background: linear-gradient(35deg, rgba(255,188,95,1) 0%, rgba(255,186,193,1) 49%, rgba(43,169,233,1) 100%);
+  width:100%;
+margin: 0 auto;
+top: 0;
+  /* display: block; */
+}
+.head{
+  display: flex;
+  align-items: center;
 }
 img {
-  float: right;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
-  margin-top: -7em;
-  margin-right: 3em;
   width: 13em;
   border-radius: 0.5em;
+  margin: 10px;
 }
 div {
   margin-left: 2em;
@@ -28,17 +41,25 @@ div {
   font-size: 1.1em;
 }
 body {
-  background-color: #d4fffd;
-  margin: 1rem auto;
-  max-width: 850px;
+  background-color: #d1f6ee;
+  margin: 0 auto;
+  max-width: 100%;
+  font-family: 'Caveat', cursive;
+  
 }
 p::first-letter{
   color: purple;
   text-transform: lowercase;
 }
 
-div >p{
+div > p{
   color: rgb(105, 7, 105);
+  font-size: 2em;
+  
+}
+ul{
+  font-size: 1.2em;
+  list-style-type: circle;
 }
 
 a[href="https://byui.instructure.com/"] {
@@ -63,19 +84,15 @@ a:active{
   color: rgb(255, 255, 255);
 }
 
-.bb {
-  color: rgb(255, 249, 163);
-  font-size: 0.7em;
-}
-.last {
-  color: rgb(255, 249, 163);
+.last, .bb {
+  color: rgb(33, 52, 80);
   font-size: 0.7em;
 }
 footer {
-  background-color: rgb(22, 51, 131);
+  background: rgb(255,188,95);
+  background: linear-gradient(343deg, rgba(255,188,95,1) 0%, rgba(255,186,193,1) 49%, rgba(43,169,233,1) 100%);
   color: rgb(255, 255, 255);
   text-align: center;
-  border-radius: 0.5em;
-  font-size: 1em;
+    font-size: 1em;
   padding: 1em;
 }
