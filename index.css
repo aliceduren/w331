@@ -48,8 +48,8 @@ body {
   
 }
 p::first-letter{
-  color: purple;
-  text-transform: lowercase;
+  color: rgb(0, 132, 2);
+  text-transform:capitalize;
 }
 
 div > p{

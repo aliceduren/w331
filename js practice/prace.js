@@ -1,23 +1,30 @@
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let x = 20 % 6;
+document.write(x);
 
-const guesses = document.querySelector('.guesses');
-const lastResult = document.querySelector('.lastResult');
-const lowOrHi = document.querySelector('.lowOrHi');
+console.log('I hate myself');
+var number = 5; //number =5
+/* Data Types:
+undefined, null (nothing), boolean (true or false), 
+symbl(idk), object (key values)
 
-const guessSubmit = document.querySelector('.guessSubmit');
-const guessField = document.querySelector('.guessField');
+variable can be filled with ANY data
+var is WHOLE program, let is temporary, const is eternal
+*/
+var myName = 'Alice';
+document.write(myName);
+document.write('gege');
+const pi = Math.PI;
+console.log(pi);
 
-let guessCount = 1;
-let resetButton;
-
-function checkGuess() {
-  alert('I am a placeholder');
-}
-let x = 5 + 11;
-let y = 20 % 6;
-// document.write(y);
-var a = 0;
-let b = 10;
-var a = ++b;
-document.write('<h1>Hello World!<h1>');
-console.log('Sup!');
+var a; //a is just decalred
+var b = 2; //2 is assigned to be
+a = 7; //now a is asigned to 7
+b = a;
+console.log(b);
+var a = 5.4522;
+var b = 10.243;
+var c = 'Mr. Krabs';
+c = c + 5;
+console.log(c);
+a *= b;
+console.log(a);
