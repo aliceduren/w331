@@ -23,8 +23,7 @@ $break-medium: 700px;
   
 a:link, a:visited{
     text-decoration: none;
-    color:  $visited-color;
-    
+    color:  $visited-color; 
 }
 a:active{
     color: $active-color;
@@ -34,6 +33,20 @@ a:hover{
 }
 h1 a:link, h1 a:visited{
     color: $h1-postdate-p-color
+}
+body{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    height: inherit;
+    overflow-x: hidden;
+    @include breakpoint(medium){
+        margin: 40px;
+    }
+    
+}
+div{
+    margin: 0;
 }
 header{
     margin: 0 auto;
@@ -67,6 +80,7 @@ li{
 main{
     padding-top:2em;
 }
+
 section{
     @include breakpoint(medium){
     padding-bottom: 20px;
@@ -92,9 +106,7 @@ section{
 p{
     font-family:$helv}
 
-div{
-    margin: 0;
-}
+
 article{
     background-color: white;
     padding: 2em;
