@@ -28,3 +28,5 @@ c = c + 5;
 console.log(c);
 a *= b;
 console.log(a);
+var hmmm = [Alice, Duren];
+console.log(hmmm);

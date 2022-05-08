@@ -73,3 +73,9 @@ function FartoCel(far) {
   return cel;
 }
 console.log(FartoCel(86));
+
+// this example takes 2 seconds to run
+const start = Date.now();
+
+m = Date.now();
+console.log(m / 10000);

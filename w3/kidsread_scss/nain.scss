@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600&family=Lora:wght@600&display=swap');
+//colors
+$visited-color:#666;
+$h1-postdate-p-color:black;
+$ul-color:#d0d0d0;
+$active-color:#DEB887;
+$hover-color:#00ddff;
+//fonts
+$libfrank:'Libre Franklin', sans-serif;
+$lora:'Lora', serif;
+$helv:Arial, Helvetica, sans-serif;
+//breakpoint
+$break-medium: 700px;
+@mixin breakpoint($break) {
+    @if $break == medium {
+    @media (min-width: $break-medium) { @content; }
+    }
+    @else {
+    @media ($break) { @content; }
+    }
+    }
+//@include breakpoint(medium){}
+  
+a:link, a:visited{
+    text-decoration: none;
+    color:  $visited-color; 
+}
+a:active{
+    color: $active-color;
+}
+a:hover{
+    color:$hover-color;
+}
+h1 a:link, h1 a:visited{
+    color: $h1-postdate-p-color
+}
+body{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    height: inherit;
+    overflow-x: hidden;
+    @include breakpoint(medium){
+        margin: 40px;
+    }
+    
+}
+div{
+    margin: 0;
+}
+header{
+    margin: 0 auto;
+    text-align: center;
+}
+nav{
+    border-top: 1px solid $ul-color;
+    border-bottom: 1px solid $ul-color;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    @include breakpoint(medium)
+    {padding-right: 45px;}
+}
+ul{
+    list-style-type: none;
+    line-height: 2em;
+    font-family: $lora;
+    margin: -5px;
+    padding: 10px;
+    color: $ul-color;
+@include breakpoint(medium){
+    text-align: right;
+    margin-right:10px;
+}}
+li{
+    @include breakpoint(medium){
+    display: inline;
+    a{padding: 10px;}}
+    
+}
+main{
+    padding-top:2em;
+}
+
+section{
+    @include breakpoint(medium){
+    padding-bottom: 20px;
+    grid-column-start: 2;
+    border-bottom: 1px solid $ul-color;
+    width: 100%;
+    grid-column-end: 2;}
+}
+.post-date{
+    font-family: $lora;
+    text-transform: uppercase;
+    text-align:right;
+    border-bottom: 1px solid $ul-color;
+    font-size: 1.7em;
+    @include breakpoint(medium){
+        padding-right: 10px;
+        border-right: 1px solid $ul-color;
+        border-bottom: none;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+}
+p{
+    font-family:$helv}
+
+
+article{
+    background-color: white;
+    padding: 2em;
+    margin-bottom: 1em;
+@include breakpoint(medium){
+    display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+}}
+h1{
+    font-size: 5em;
+}
+h1,h2{
+    font-family: $libfrank;
+    font-family: $lora;
+}
+h2{
+    font-size: 2.2em;
+}
+
+figure{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    img{
+        margin: auto;
+        @include breakpoint(medium){
+            width: 30%;
+        }
+}}

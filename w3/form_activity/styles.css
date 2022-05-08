@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(128, 11, 0);
+}
+body h1 {
+  color: rgb(255, 255, 255);
+}
+
+#contactform {
+  background-color: rgb(214, 187, 129);
+  box-sizing: border-box;
+}
+#contactform input, #contactform textarea {
+  background-color: rgb(246, 236, 213);
+  width: 32em;
+}
+@media (max-width: 700px) {
+  #contactform input, #contactform textarea {
+    width: 95%;
+  }
+}
+#contactform input[type=submit] {
+  width: 60px;
+  height: auto;
+}
+@media (min-width: 700px) {
+  #contactform input[type=submit] {
+    position: absolute;
+    top: 300px;
+  }
+}
+
+form, fieldset {
+  width: 90%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div {
+  float: right;
+  padding: 0.5em;
+}
+@media (max-width: 700px) {
+  div {
+    width: -webkit-fill-available;
+    padding: 0;
+  }
+}
+
+label {
+  float: left;
+  padding-right: 2em;
+}
+
+/*# sourceMappingURL=styles.css.map */
