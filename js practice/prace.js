@@ -49,148 +49,135 @@ len = straw.length;
 console.log(straw);
 console.log(len);
 
-// var firstLetter = '';
-// var firstName = 'Supercalifragilisticexpialidocious';
-//var firstLetter = firstName[firstName.length - 1]; js counts from 0, so we need 1
-//console.log(firstLetter); STRINGS CANNOT BE CHANGED
+var firstLetter = '';
+var firstName = 'Supercalifragilisticexpialidocious';
+var firstLetter = firstName[firstName.length - 1]; //js counts from 0, so we need 1
+console.log(firstLetter); //STRINGS CANNOT BE CHANGED
 
-//madlibs & functions
-// function wordBlacks(noun, adj, verb, place, adverb) {
-//   var sentence = '';
-//   sentence +=
-//     'The ' +
-//     adj +
-//     ' ' +
-//     noun +
-//     ' ' +
-//     verb +
-//     ' to the ' +
-//     place +
-//     ' ' +
-//     adverb +
-//     '.';
-//   return sentence;
-// }
-// console.log(
-//   wordBlacks('kitty', 'smelly', 'sprinted', 'Statue of Liberty', 'menacingly')
-// );
-// document.querySelector("p").textContent=wordBlacks()
+//madlibs & functions;
+function wordBlacks(noun, adj, verb, place, adverb) {
+  var sentence = '';
+  sentence +=
+    'The ' +
+    adj +
+    ' ' +
+    noun +
+    ' ' +
+    verb +
+    ' to the ' +
+    place +
+    ' ' +
+    adverb +
+    '.';
+  return sentence;
+}
+console.log(
+  wordBlacks('kitty', 'smelly', 'sprinted', 'Statue of Liberty', 'menacingly')
+);
+document.querySelector('p').textContent = wordBlacks();
 
-// function idk(num, num2, num3) {
-//   var adding;
-//   adding = num * num2 + num3;
-//   return adding;
-// }
-// console.log(idk(100, 2, 3));
+function idk(num, num2, num3) {
+  var adding;
+  adding = num * num2 + num3;
+  return adding;
+}
+console.log(idk(100, 2, 3));
 //think i got it . . . sorta
-// function herro(string, string2) {
-//   var name = '';
-//   name = string + string2;
-//   return name;
-// }
-// console.log(herro('I wanna die ', 'today!!'));
+function herro(string, string2) {
+  var name = '';
+  name = string + string2;
+  return name;
+}
+console.log(herro('I wanna die ', 'today!!'));
 
-// function justDo() {
-//   var thIs = 9;
-//   var numBer = 4;
-//   var newImg = numBer + thIs;
-//   return newImg;
-// }
-// console.log(justDo());
+function justDo() {
+  var thIs = 9;
+  var numBer = 4;
+  var newImg = numBer + thIs;
+  return newImg;
+}
+console.log(justDo());
 
-// function FartoCel(far) {
-//   cel = ((far - 32) * 5) / 9;
-//   return cel;
-// }
-// console.log(FartoCel(86));
+function FartoCel(far) {
+  cel = ((far - 32) * 5) / 9;
+  return cel;
+}
+console.log(FartoCel(86));
 
-// this example takes 2 seconds to run
-// const start = Date.now();
+//this example takes 2 seconds to run
+const start = Date.now();
 
-// m = Date.now();
-// console.log(m / 10000);
+m = Date.now();
+console.log(m / 10000);
 
-// var hmmm = [1, 'Elizabeth', ['Duren', 'alice', [23, [4, ['Hy', [42]]]]]];
+var hmmm = [1, 'Elizabeth', ['Duren', 'alice', [23, [4, ['Hy', [42]]]]]];
 // declare variable, then identify variable.
 //Then you add in an element in the array. Can be ANY data type, string, number, more arryas (nested array), floating numbers and idk.
-// console.log(hmmm[2][2][1][1][1]);
-// let activities = [
-//   ['Work', 9],
-//   ['Eat', 1],
-//   ['Commute', 2],
-//   ['Play Game', 1],
-//   ['Sleep', 7],
-// ];
+console.log(hmmm[2][2][1][1][1]);
+let activities = [
+  ['Work', 9],
+  ['Eat', 1],
+  ['Commute', 2],
+  ['Play Game', 1],
+  ['Sleep', 7],
+];
 
-// activities[4][0] = 'hey';
-// activities.push(['Have Sweet Dreams', 3]);
-// let noact = activities.shift(); //.pop removes the last, shift removes the first
-// console.log(activities);
-// console.log(noact); //noact now has the last/first element of the original array that we pushed
-// activities.unshift(['Ha ha! First!', 5]);
-// console.log(activities);
-
-// let running = 5;
-// let whyrurunning = 6;
-// running += whyrurunning;
-// console.log(running);
-
-// function timesFive(num) {
-//   return num * 5;
-// }
-// console.log(timesFive(5));
-
-// var sum = 0;
-// function addThree() {
-//   sum += 3;
-// }
-// function addFive() {
-//   sum += 5;
-// }
-
-// function nextInLine(arr, item) {
-//   arr.push(item);
-//   return arr.shift();
-// }
-// var testArr = [1, 2, 3, 4, 5];
-
-// console.log('before: ' + JSON.stringify(testArr));
-// console.log(nextInLine(testArr, 6));
-// console.log('After: ' + JSON.stringify(testArr));
-
-// function Boooo() {
-//   return true;
-// }
-// console.log(Boooo());
-
-// function ToF(truofal) {
-//   if (truofal) {
-//     return 'ye sure';
-//   }
-//   return 'no way';
-// }
-// function OToF(wataboutit) {
-//   if (wataboutit) {
-//     return 'Ye';
-//   }
-//   return 'no';
-// }
-// console.log(ToF(true));
-/*console.log(OToF(false)); true and false don't exactly have
-to say "True" and "False", it just means that something is
-there or not.*/
-
-// function testx() {
-//   if ((activities[0][1] = 'no')) {
-//     return 4;
-//   }
-//   return 3;
-// }
-// console.log(testx(false));
-
-// for (let index = 0; index < array.length; index++) {
-//   const element = array[index];
-// }
+activities[4][0] = 'hey';
+activities.push(['Have Sweet Dreams', 3]);
+let noact = activities.shift(); //.pop removes the last, shift removes the first
+console.log(activities);
+console.log(noact); //noact now has the last/first element of the original array that we pushed
+activities.unshift(['Ha ha! First!', 5]);
+console.log(activities);
+let running = 5;
+let whyrurunning = 6;
+running += whyrurunning;
+console.log(running);
+function timesFive(num) {
+  return num * 5;
+}
+console.log(timesFive(5));
+var sum = 0;
+function addThree() {
+  sum += 3;
+}
+function addFive() {
+  sum += 5;
+}
+function nextInLine(arr, item) {
+  arr.push(item);
+  return arr.shift();
+}
+var testArr = [1, 2, 3, 4, 5];
+console.log('before: ' + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log('After: ' + JSON.stringify(testArr));
+function Boooo() {
+  return true;
+}
+console.log(Boooo());
+function ToF(truofal) {
+  if (truofal) {
+    return 'ye sure';
+  }
+  return 'no way';
+}
+function OToF(wataboutit) {
+  if (wataboutit) {
+    return 'Ye';
+  }
+  return 'no';
+}
+console.log(ToF(true));
+console.log(OToF(false)); /*true and false don't exactly have
+ say "True" and "False", it just means that something is
+ere or not.*/
+function testx() {
+  if ((activities[0][1] = 'no')) {
+    return 4;
+  }
+  return 3;
+}
 // let text = '';
 // text += activities[0] + '<br>';
 // text += activities[1] + '<br>';
@@ -200,21 +187,20 @@ there or not.*/
 // text += activities[5] + '<br>';
 // document.querySelector('.try1').innerHTML = text;
 //ORRRR
-// let textnew = '';
-// for (let i = 0; i < activities.length; i++) {
-//   textnew += activities[i] + '<br>';
-// }
-// document.querySelector('.try2').innerHTML = textnew;
+let textnew = '';
+for (let i = 0; i < activities.length; i++) {
+  textnew += activities[i] + '<br>';
+}
+document.querySelector('.try2').innerHTML = textnew;
 // same thing,easier set up
 
 var anthonerarray = [];
 var i = 0;
 while (i < 10) {
-  anthonerarray.push(i);
+  anthonerarray.push(' ', i);
   i++;
 }
 console.log(anthonerarray);
-document.querySelector('.try2').innerHTML = anthonerarray;
 
 var thisnewarray = [];
 
@@ -224,17 +210,94 @@ for (let i = 96; i <= 100; i++) {
 
 console.log(thisnewarray);
 // program to display numbers from 1 to 5
-let sum = 0;
+const straaa = 'apple';
 
-// looping from i = 1 to 5
-// in each iteration, i is increased by 1
-for (let i = 1; i <= 12; i++) {
-  sum += i;
-  document.querySelector('.try3').innerHTML = sum; // printing the value of i
-  console.log(i);
+const result = straaa.split('').join(' ');
+console.log(result);
+
+var arrayAgainYay = ['History', 'Math', 'English', 'Algebra', 'Chemistry'];
+
+let TYnext = '';
+for (let index = 0; index < arrayAgainYay.length; index++) {
+  TYnext += arrayAgainYay[index] + `! I like ${arrayAgainYay[index]}.` + '<br>';
 }
-var nameF = 'Alice Elizabeth Duren';
-console.log(nameF);
-while ((nameF = String)) {
-  console.log('worked');
-}
+console.log(arrayAgainYay);
+document.querySelector('.try3').innerHTML = TYnext;
+
+var thisObject = { Alice: 'first name' };
+// let apiURL = 'https://www.themealdb.com/api/json/v1/1/random.php';
+
+// fetch(apiURL)
+//   .then((response) => response.json())
+//   .then((jsObject) => {
+//     console.log(jsObject);
+//     const meAls = jsObject['meals'][0];
+//     document.querySelector('.tester').textContent =
+//       meAls.strArea + ' ' + meAls.strCategory;
+//     console.log(jsObject['meals'][0].idMeal);
+//   });
+const requestURL = 'https://www.themealdb.com/api/json/v1/1/random.php';
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const meaLs = jsonObject['meals'];
+    for (let i = 0; i < meaLs.length; i++) {
+      let card = document.createElement('section');
+      let h2 = document.createElement('h2');
+      h2.textContent =
+        'Category: ' + meaLs[0].strArea + ' ' + meaLs[0].strCategory;
+      let h3 = document.createElement('h3');
+      h3.textContent = 'Meal: ' + meaLs[0].strMeal;
+      let a_h3 = document.createElement('p');
+      a_h3.textContent = 'Instructions: ' + meaLs[0].strInstructions;
+      let image = document.createElement('img');
+      image.setAttribute('src', meaLs[0].strMealThumb);
+      image.alt = meaLs[0].strMeal;
+      let ingre = document.createElement('p');
+      ingre.innerHTML =
+        '<b>Ingredients: </b>' +
+        '<br>' +
+        meaLs[0].strIngredient1 +
+        '<br>' +
+        meaLs[0].strIngredient2 +
+        '<br>' +
+        meaLs[0].strIngredient3 +
+        '<br>' +
+        meaLs[0].strIngredient4 +
+        '<br>' +
+        meaLs[0].strIngredient5 +
+        '<br>' +
+        meaLs[0].strIngredient6 +
+        '<br>' +
+        meaLs[0].strIngredient7 +
+        '<br>' +
+        meaLs[0].strIngredient8 +
+        '<br>' +
+        meaLs[0].strIngredient9 +
+        '<br>' +
+        meaLs[0].strIngredient10 +
+        '<br>' +
+        meaLs[0].strIngredient11 +
+        '<br>' +
+        meaLs[0].strIngredient12 +
+        '<br>' +
+        meaLs[0].strIngredient13 +
+        '<br>' +
+        meaLs[0].strIngredient14 +
+        '<br>' +
+        meaLs[0].strIngredient15 +
+        '<br>' +
+        meaLs[0].strIngredient16;
+
+      card.appendChild(h2);
+      card.appendChild(h3);
+      card.appendChild(a_h3);
+      card.appendChild(image);
+      card.appendChild(ingre);
+      document.querySelector('.tester').appendChild(card);
+    }
+  });

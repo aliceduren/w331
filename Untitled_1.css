@@ -2,3 +2,9 @@ main{
     display: flex;
     flex-direction: row-reverse;
 }
+.first >h2 {
+    color: blueviolet;
+}
+.second>h2{
+    color: blue;
+}
