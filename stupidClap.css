@@ -1,24 +1,61 @@
-.et_pb_testimonial_0.et_pb_testimonial {
-    text-align: center;
-    color: #9A181E;
+body{
+  margin: auto 0;
 }
-  
-.et_pb_blurb_description{
-  color: #9A181E;
+header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  background-color: aqua;
 }
-.et_pb_gallery_image img {
- border:solid 5px #9A181E;
-  padding: 10px;
+.charac{
+  padding: 2em;
 }
-.percent-value{
-  color: #9A181E;
+header img{
+  transition: width 1s; color:blue 1s;
 }
-.et_pb_cta_0.et_pb_promo, .et_pb_signup_0.et_pb_subscribe {
-  background-color: #9A181E;
+.nameS{
+  transition: font-size 1s;
+  text-align: center;
 }
-#main-footer{
-  background-color: #9A181E;
+header img:hover{
+  width: 330px;
 }
-#footer-info{    
-    color: white;
+.nameS:hover{
+  font-size: 2em;
+}
+nav{
+  background-color: blueviolet;
+}
+ul{
+  display: flex;
+  padding: 1em;
+    font-size: 1.2em;
+    margin: auto;
+}
+nav li{
+  flex: 1 1 auto;
+}
+nav a{
+  text-align: center;
+  transition-duration: 1s;
+  color: aliceblue;
+  display: block;
+  text-decoration: none;
+}
+nav a:hover{
+  font-size: 1.2em;
+  font-style: bold;
+}
+li{
+  list-style: none;
+}
+main{
+  margin: 0 auto;
+    max-width: 900px;
+}
+article img{
+  width: 500px;
+  height: auto;
+  float: left;
 }
