@@ -1,0 +1,9 @@
+
+stuff.css
+ [2m2:5[22m   [31m[31m✖[39m  Expected indentation of 2 spaces                                [2mindentation[22m                     
+ [2m3:5[22m   [31m[31m✖[39m  Expected indentation of 2 spaces                                [2mindentation[22m                     
+ [2m4:5[22m   [31m[31m✖[39m  Expected indentation of 2 spaces                                [2mindentation[22m                     
+ [2m5:5[22m   [31m[31m✖[39m  Expected indentation of 2 spaces                                [2mindentation[22m                     
+ [2m5:11[22m  [31m[31m✖[39m  Expected single space after ":" with a single-line declaration  [2mdeclaration-colon-space-after[22m   
+ [2m6:1[22m   [31m[31m✖[39m  Unexpected missing end-of-source newline                        [2mno-missing-end-of-source-newline[22m
+
