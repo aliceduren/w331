@@ -1,0 +1,12 @@
+body{
+    background: green;
+}
+.hi{
+    background: linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #999 78%),
+    linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+    #444;
+    width:500px;
+    height:500px;
+    
+}
