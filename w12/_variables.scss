@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+:root {
+    --ratio: 1.5;
+    --s-5: calc(var(--s-4) / var(--ratio));
+    --s-4: calc(var(--s-3) / var(--ratio));
+    --s-3: calc(var(--s-2) / var(--ratio)); // 5px
+    --s-2: calc(var(--s-1) / var(--ratio)); // 8px
+    --s-1: calc(var(--s0) / var(--ratio)); // 12px
+    --s0: 1rem; // 18px
+    --s1: calc(var(--s0) * var(--ratio)); // 27px
+    --s2: calc(var(--s1) * var(--ratio)); // 40px
+    --s3: calc(var(--s2) * var(--ratio)); // 60px
+    --s4: calc(var(--s3) * var(--ratio));
+    --s5: calc(var(--s4) * var(--ratio));
+}
+$base-font-size: 18px;
+$logo-color:#f33;
+$logo-size:54px;
+$border-radius:60% 40%/40% 60%,rotate 45deg;
+$background-color:#fdfbfb;
+$headline-font:'Old Standard TT', serif;
+$body-font:Arial, Helvetica, sans-serif;
+$font-color:#222;
+$link-visited:#222;
+$link-hover:#f33;
+
+$break-small: 26em;
+$break-medium: 31em;
+$break-large: 60em;
+@mixin breakpoint($break) {
+    @if $break == large {
+        @media (min-width:$break-large) {
+            @content;
+        }
+    }
+    @else if $break == medium{
+        @media (min-width:$break-medium) {
+            @content;
+        }
+
+    }
+    @else if $break == small{
+        @media (min-width:$break-small) {
+            @content;
+        }
+
+    }
+    @else {
+        @media ($break) {
+            @content;
+        }
+    }
+}
+$portrait:35vw;
+$landscape:50vw;
+$border-mobile:2vw;
+$border-large:1.4vw;
+$box-shadow:-4px 4px 17px 13px rgb(0 0 0 / 8%);

@@ -2,3 +2,46 @@
 @import "utilities";
 @import "blocks";
 @import "compositions";
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: $base-font-size;
+    body{
+        font-family: $body-font;
+        color: $font-color;
+        background-color: $background-color;
+    }
+}
+img{
+    max-width: 100%;
+}
+h1,h2,h3{
+    font-family: $headline-font;
+    font-weight: normal;
+    letter-spacing: -1px;
+}
+h1{
+    font-size: var(--s3);
+    text-align: center;
+    @include breakpoint(small) {
+    font-size: 10vw;
+    }
+}
+figure {
+    margin: 0;
+    background-color: white;
+    box-shadow: -4px 4px 17px 13px rgb(0 0 0 / 8%);
+    border: 2vw solid #fff;
+    @include breakpoint(small) {
+    border: 1.4vw solid #fff;
+    }
+}
+a:link, a:visited{
+    color:$link-visited;
+    text-decoration: none;
+}
+a:hover{
+    color:$link-hover;
+}
