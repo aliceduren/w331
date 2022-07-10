@@ -1,4 +1,4 @@
-@import "variables";
+@use 'variables' as *;
 @import "utilities";
 @import "blocks";
 @import "compositions";
@@ -6,9 +6,8 @@
     box-sizing: border-box;
 }
 
-html{
-    font-size: $base-font-size;
-    
+html {
+    font-size: $base-font-size; // 1rem
 }
 body{
     font-family: $body-font;
