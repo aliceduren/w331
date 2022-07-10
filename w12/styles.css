@@ -1,71 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
-:root {
-  --ratio: 1.5;
-  --s-5: calc(var(--s-4) / var(--ratio));
-  --s-4: calc(var(--s-3) / var(--ratio));
-  --s-3: calc(var(--s-2) / var(--ratio));
-  --s-2: calc(var(--s-1) / var(--ratio));
-  --s-1: calc(var(--s0) / var(--ratio));
-  --s0: 1rem;
-  --s1: calc(var(--s0) * var(--ratio));
-  --s2: calc(var(--s1) * var(--ratio));
-  --s3: calc(var(--s2) * var(--ratio));
-  --s4: calc(var(--s3) * var(--ratio));
-  --s5: calc(var(--s4) * var(--ratio));
-}
+/* Error: This module and the new module both define a variable named "$base-font-size".
+ *   ,
+ * 1 | @use 'variables' as *;
+ *   | ^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   _utilities.scss 1:1  @import
+ *   styles.scss 2:9      root stylesheet */
 
-* {
-  box-sizing: border-box;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: This module and the new module both define a variable named \"$base-font-size\".\a   \2577 \a 1 \2502  @use 'variables' as *;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   _utilities.scss 1:1  @import\a   styles.scss 2:9      root stylesheet";
 }
-
-html {
-  font-size: 18px;
-}
-html body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
-  background-color: #fdfbfb;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3 {
-  font-family: "Old Standard TT", serif;
-  font-weight: normal;
-  letter-spacing: -1px;
-}
-
-h1 {
-  font-size: var(--s3);
-  text-align: center;
-}
-@media (min-width: 26em) {
-  h1 {
-    font-size: 10vw;
-  }
-}
-
-figure {
-  margin: 0;
-  background-color: white;
-  box-shadow: -4px 4px 17px 13px rgba(0, 0, 0, 0.08);
-  border: 2vw solid #fff;
-}
-@media (min-width: 26em) {
-  figure {
-    border: 1.4vw solid #fff;
-  }
-}
-
-a:link, a:visited {
-  color: #222;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f33;
-}
-
-/*# sourceMappingURL=styles.css.map */
